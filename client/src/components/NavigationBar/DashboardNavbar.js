@@ -11,7 +11,7 @@ const DashboardNavbar = () => {
     // alert("signout");
     await dispatch(signOutAction());
     await dispatch(clearUserAction());
-
+    window.location.reload();
     navigate("/");
   };
   return (
